@@ -1,0 +1,21 @@
+[package]
+name = "dynatrace_roperator"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# Cargo.toml
+[dependencies]
+kube = { version = "0.76.0", features = ["runtime", "derive"] }
+k8s-openapi = { version = "0.16.0", features = ["v1_25"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+schemars = { version = "0.8", features = ["chrono"] }
+futures = "0.3"
+anyhow = { version = "1.0" }
+thiserror = "1.0.37"
+tracing = "0.1.37"
+
+serde_json = "1.0"
+serde_yaml = "0.9"
